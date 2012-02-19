@@ -23,9 +23,11 @@ Currently, it only works in Chrome and Safari. Firefox doesn't seem to reliably 
   
 Initialize the renderer like any other Three.js renderer, using:
 
-    var renderer = new Acko.CSS3DRenderer({
-      perspective: ... // optional
-    });
+```javascript
+var renderer = new Acko.CSS3DRenderer({
+  perspective: ... // optional
+});
+```
 
 By default, the renderer wraps itself in a CSS perspective for the camera. Use `perspective` to specify a custom DOM element which will receive the camera's CSS perspective instead. You can use this to link the renderer to a page-wide parallax effect. Or, specify 'false' to forego camera perspective and hardcode it yourself.
   
@@ -35,7 +37,7 @@ The file `css3d.css` contains useful default styles.
 
 #### Editor ####
 
-A simple keyboard operator editor is included in <a href="editor.html">editor.html</a>. The scene is serialized into the textfield at the bottom. Copy/paste this into data.js to save it.
+A simple keyboard operator editor is included in <a href="https://github.com/unconed/CSS3D.js/blob/master/editor.html">editor.html</a>. The scene is serialized into the textfield at the bottom. Copy/paste this into data.js to save it.
 
 *Controls*
 
