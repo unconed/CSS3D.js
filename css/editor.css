@@ -1,0 +1,99 @@
+#demo {
+  width: 960px;
+  height: 540px;
+  background: #ccc;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body.demo {
+  width: 960px;
+  margin: 0 auto;
+}
+body.demo section {
+  width: 640px;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html.css3d-editor, body.css3d-editor {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#hackery canvas {
+  display: block;
+}
+#hackery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#editor {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 120px;
+  background: rgba(0, 0, 0, .65);
+  z-index: 100;
+  -webkit-transform: translateZ(50000px);
+}
+#editor button {
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 3px;
+  margin-right: -2px;
+}
+#editor .spacer {
+  padding-left: 5px;
+}
+#editor .swatches {
+  width: 300px;
+  float: left;
+}
+#editor .swatch {
+  float: left;
+  width: 30px;
+  height: 20px;
+  color: rgba(0,0,0,.4);
+  font-size: 10px;
+  line-height: 20px;
+}
+#editor .swatch.selected {
+  width: 26px;
+  height: 16px;
+  border: 2px solid rgba(70, 70, 70, .5);
+}
+#editor textarea {
+  width: 200px;
+  height: 60px;
+  float: left;
+}
+#editor .info {
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+header #hackery,
+header #overlay {
+  position: absolute;
+  width: 100%;
+}
+
+body.css3d-editor header {
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+body.css3d-editor header > div {
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+:focus {
+  outline: none;
+}

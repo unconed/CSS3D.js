@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS3D.js - Editor</title>
+
+  <link rel="stylesheet" href="css/css3d.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/editor.css" type="text/css" media="all" />
+
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/requestAnimationFrame.js"></script>
+  <script type="text/javascript" src="lib/three.mini.js"></script>
+
+  <script type="text/javascript" src="css3d/css3d.js"></script>
+
+  <script type="text/javascript" src="editor/common.js"></script>
+  <script type="text/javascript" src="editor/scenecontrols.js"></script>
+  <script type="text/javascript" src="editor/scene.js"></script>
+  <script type="text/javascript" src="editor/serialize.js"></script>
+  <script type="text/javascript" src="editor/data.js"></script>
+
+  <script type="text/javascript" src="editor/demo.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="demo">
+
+  <h1>CSS3D.js</h1>
+  <h2>CSS 3D renderer for Three.js</h2>
+  
+  <div id="demo"></div>
+
+  <section>
+
+  <p>This experimental renderer was built for the design of <a href="http://acko.net/blog/making-love-to-webkit">Acko.net</a>. It lets you manage simple CSS 3D objects using Three.js.</p>
+
+  <p>Functionality is very limited: only planes and lines are supported (THREE.Line, THREE.PlaneGeometry). In its current form it is nowhere near a replacement for WebGL or Canvas, and browser support is buggy at best.</p>
+
+  <p>However, in the right setting, CSS 3D can be a useful and impressive effect, particularly when combined with parallax scrolling. I think it shows that there is a case to be made to integrate 3D more tightly into the DOM. In the meantime, this library opens the door for more complicated experimentation and prototyping of 3D Web UI concepts.</p>
+
+  <p>I don't intend to maintain or develop this further, so forking is encouraged.</p>
+
+  <h2>Usage</h2>
+  
+  <p>Initialize the renderer like any other Three.js renderer, using:</p>
+
+<pre>var renderer = new Acko.CSS3DRenderer({
+  perspective: ... // optional
+});</pre>
+
+  <p>By default, the renderer wraps itself in a CSS perspective for the camera. Use <code>perspective</code> to specify a custom DOM element which will receive the camera's CSS perspective instead. You can use this to link the renderer to a page-wide parallax effect. Or, specify 'false' to forego camera perspective and hardcode it yourself.</p>
+  
+  <p>To nest the CSS 3D renderer, make sure you apply <code>transform-style: preserve-3d</code> as necessary.</p>
+
+  <h2>Editor</h2>
+
+  <p>A simple keyboard operator editor is included in <a href="editor.html">editor.html</a>. The scene is serialized into the textfield at the bottom. Copy/paste this into data.js to save it.</p>
+
+  <h3>Controls</h3>
+
+  <ul>
+    <li>Click+Drag — Orbit camera</li>
+    <li>Enter — New object</li>
+    <li>Space — Clone object</li>
+    <li>Backspace — Delete object</li>
+    <li>Tab / Shift+Tab — Cycle through objects</li>
+    <li>WASD/QE — Move object</li>
+    <li>Shift+WASD/QE — Resize object</li>
+    <li>Ctrl+WASD/QE — Move camera</li>
+    <li>[] — Lower/raise units</li>
+    <li>ZX — Orbit distance</li>
+    <li>T/T/U — Tag/untag/untag all</li>
+  </ul>
+
+  <p>The scene editor was developed specifically for Acko.net and lacks many features (like custom colors). Colors are hardcoded in serialize.js.</p>
+
+  <hr>
+
+  <p>© 20112 Steven Wittens - <a href="LICENSE.txt">MIT License</a>.</p>
+  
+  </section>
+
+</body>
+</html>
