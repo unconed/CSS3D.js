@@ -3,7 +3,7 @@ CSS3D.js
 
 by Steven Wittens
 
-![https://raw.github.com/unconed/CSS3D.js/master/css3d.png](CSS 3D renderer)
+![CSS 3D renderer](https://raw.github.com/unconed/CSS3D.js/master/css3d.png)
 
 #### CSS 3D renderer for Three.js ####
 
