@@ -3,6 +3,8 @@ CSS3D.js
 
 by Steven Wittens
 
+![https://raw.github.com/unconed/CSS3D.js/master/css3d.png](CSS 3D renderer)
+
 #### CSS 3D renderer for Three.js ####
 
 This experimental renderer was built for the design of [Acko.net](http://acko.net/blog/making-love-to-webkit). It lets you manage simple CSS 3D objects using Three.js.
