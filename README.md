@@ -29,6 +29,8 @@ By default, the renderer wraps itself in a CSS perspective for the camera. Use `
   
 To nest the CSS 3D renderer, make sure you apply `transform-style: preserve-3d` as necessary.
 
+The file `css3d.css` contains useful default styles.
+
 #### Editor ####
 
 A simple keyboard operator editor is included in <a href="editor.html">editor.html</a>. The scene is serialized into the textfield at the bottom. Copy/paste this into data.js to save it.
