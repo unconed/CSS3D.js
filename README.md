@@ -9,7 +9,7 @@ This experimental renderer was built for the design of [Acko.net](http://acko.ne
 
 Functionality is very limited: only planes and lines are supported (THREE.Line, THREE.PlaneGeometry). In its current form it is nowhere near a replacement for WebGL or Canvas, and browser support is buggy at best.
 
-However, in the right setting, CSS 3D can be a useful and impressive effect, particularly when combined with parallax scrolling. I think it shows that there is a case to be made to integrate 3D more tightly into the DOM. In the meantime, this library opens the door for more complicated experimentation and prototyping of 3D Web UI concepts.
+However, in the right setting, CSS 3D can be a useful and impressive effect, particularly when combined with parallax scrolling. I think it shows that there is a case to be made to integrate 3D more tightly into the DOM, with arbitrary meshes and shaders. In the meantime, this library opens the door for more complicated experimentation and prototyping of 3D Web UI concepts.
 
 I don't intend to maintain or develop this further, so forking is encouraged.
 
