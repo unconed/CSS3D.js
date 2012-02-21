@@ -55,7 +55,7 @@ A simple keyboard operator editor is included in <a href="https://github.com/unc
 
 The scene editor was developed specifically for Acko.net and lacks many features (like custom colors). Colors are hardcoded in serialize.js.
 
-© 2012 Steven Wittens - [MIT License](LICENSE.txt).
+© 2012 Steven Wittens - [MIT License](https://github.com/unconed/CSS3D.js/blob/master/LICENSE.txt).
 
 </body>
 </html>
