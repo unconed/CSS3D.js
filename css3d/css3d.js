@@ -1,7 +1,7 @@
 /**
  * Very spartan three.js CSS/DOM renderer.
  * by Steven Wittens
- * https://github.com/unconed/cssthree.js/
+ * https://github.com/unconed/CSS3D.js
  *
  * ===========================================================================
  *
