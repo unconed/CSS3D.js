@@ -18,7 +18,6 @@
  *
  * Planes can be rendered as solid rectangles, or used to contain arbitrary
  * DOM elements. If given a name, a text/html template is requested to fill the div.
- * 
  *
  * options {
  *   perspective: (optional) Override the DOM element which receives the camera's perspective.
@@ -405,6 +404,10 @@ CSS3D.Plane.prototype = $.extend(new CSS3D.Renderable(), {
       width:  1 +'px',
       height: 1 +'px',
       WebkitTransformOrigin: '0% 0%',
+         MozTransformOrigin: '0% 0%',
+           OTransformOrigin: '0% 0%',
+          msTransformOrigin: '0% 0%',
+            transformOrigin: '0% 0%',
     });
     $div[0].editRender = this;
     return $div;
@@ -591,6 +594,7 @@ CSS3D.Line.prototype = $.extend(new CSS3D.Renderable(), {
            MozTransform: t,
              OTransform: t,
             msTransform: t,
+              transform: t,
       });
 
       t = this.transform(v2, v1, object.material.linewidth, 90);
