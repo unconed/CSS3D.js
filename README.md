@@ -15,6 +15,8 @@ However, in the right setting, CSS 3D can be a useful and impressive effect, par
 
 I don't intend to maintain or develop this further, so forking is encouraged.
 
+Requires: jQuery
+
 #### Browser support ####
 
 Currently, it only works in Chrome and Safari. Firefox doesn't seem to reliably support the necessary cascading of preserve-3d transforms.
