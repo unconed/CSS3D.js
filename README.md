@@ -7,6 +7,8 @@ by Steven Wittens
 
 #### CSS 3D renderer for Three.js ####
 
+__Note: this library is mostly obsolete now that Three.js has its [own CSS 3D renderer](http://mrdoob.github.com/three.js/examples/css3d_molecules.html) which is integrated in a cleaner fashion.__
+
 This experimental renderer was built for the design of [Acko.net](http://acko.net/blog/making-love-to-webkit). It lets you manage simple CSS 3D objects using Three.js.
 
 Functionality is very limited: only planes and lines are supported (THREE.Line, THREE.PlaneGeometry). In its current form it is nowhere near a replacement for WebGL or Canvas, and browser support is buggy at best.
