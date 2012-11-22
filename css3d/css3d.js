@@ -205,7 +205,7 @@ var CSS3D = Acko.CSS3DRenderer = function (options) {
  */
 CSS3D.getTemplate = function (id) {
   var e = document.getElementById('template-' + id);
-  return e && e.innerText;
+  return e && (e.innerText || e.textContent);
 };
 
 /**
